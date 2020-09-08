@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+.loading {
+    position: relative;
+}
+.item {
+    display: inline-block;
+    margin: 07px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    animation: load .5s ease-in-out infinite alternate;
+}
+
+.item-1 {
+    background: #3a8df2;
+    animation-delay: 0.1s;
+}
+.item-2 {
+    background: #e14e39;
+    animation-delay: 0.2s;
+}
+.item-3 {
+    background: #fcc000;
+    animation-delay: 0.3s;
+}
+.item-4 {
+    background: #3aa05a;
+    animation-delay: 0.4s;
+}
+@keyframes load {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-13px);
+    }
+}
